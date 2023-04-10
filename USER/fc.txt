@@ -1,0 +1,403 @@
+正在比较文件 watcher-mic.txt 和 WATCHER-NOMIC.TXT
+***** watcher-mic.txt
+
+    Program header offset: 539756 (0x00083c6c)
+    Section header offset: 539852 (0x00083ccc)
+
+***** WATCHER-NOMIC.TXT
+
+    Program header offset: 554000 (0x00087410)
+    Section header offset: 554096 (0x00087470)
+
+*****
+
+***** watcher-mic.txt
+** Program header #0 (PT_LOAD) [PF_X + PF_W + PF_R + PF_ARM_ENTRY]
+    Size : 88908 bytes (31444 bytes in file)
+    Virtual address: 0x08000000 (Alignment 32)
+***** WATCHER-NOMIC.TXT
+** Program header #0 (PT_LOAD) [PF_X + PF_W + PF_R + PF_ARM_ENTRY]
+    Size : 93684 bytes (35612 bytes in file)
+    Virtual address: 0x08000000 (Alignment 32)
+*****
+
+***** watcher-mic.txt
+** Section #1 'ER_IROM1' (SHT_PROGBITS) [SHF_ALLOC + SHF_EXECINSTR]
+    Size   : 31212 bytes (alignment 4)
+    Address: 0x08000000
+***** WATCHER-NOMIC.TXT
+** Section #1 'ER_IROM1' (SHT_PROGBITS) [SHF_ALLOC + SHF_EXECINSTR]
+    Size   : 35380 bytes (alignment 4)
+    Address: 0x08000000
+*****
+
+***** watcher-mic.txt
+    __Vectors
+        0x08000000:    2000e160    `..     DCD    536928608
+        0x08000004:    08000149    I...    DCD    134218057
+        0x08000008:    08001369    i...    DCD    134222697
+        0x0800000c:    0800126f    o...    DCD    134222447
+        0x08000010:    08001365    e...    DCD    134222693
+        0x08000014:    0800076d    m...    DCD    134219629
+        0x08000018:    08003c7b    {<..    DCD    134233211
+        0x0800001c:    00000000    ....    DCD    0
+***** WATCHER-NOMIC.TXT
+    __Vectors
+        0x08000000:    2000e3c0    ...     DCD    536929216
+        0x08000004:    0800027d    }...    DCD    134218365
+        0x08000008:    08002a35    5*..    DCD    134228533
+        0x0800000c:    0800293b    ;)..    DCD    134228283
+        0x08000010:    08002a31    1*..    DCD    134228529
+        0x08000014:    08001e37    7...    DCD    134225463
+        0x08000018:    08005347    GS..    DCD    134239047
+        0x0800001c:    00000000    ....    DCD    0
+*****
+
+***** watcher-mic.txt
+        0x08000028:    00000000    ....    DCD    0
+        0x0800002c:    08003455    U4..    DCD    134231125
+        0x08000030:    08000cc1    ....    DCD    134220993
+        0x08000034:    00000000    ....    DCD    0
+        0x08000038:    080016cb    ....    DCD    134223563
+        0x0800003c:    08003569    i5..    DCD    134231401
+        0x08000040:    08000163    c...    DCD    134218083
+        0x08000044:    08000163    c...    DCD    134218083
+        0x08000048:    08000163    c...    DCD    134218083
+        0x0800004c:    08000163    c...    DCD    134218083
+        0x08000050:    08000163    c...    DCD    134218083
+        0x08000054:    08000163    c...    DCD    134218083
+        0x08000058:    08000cc5    ....    DCD    134220997
+        0x0800005c:    08000163    c...    DCD    134218083
+        0x08000060:    08000163    c...    DCD    134218083
+        0x08000064:    08000cf9    ....    DCD    134221049
+        0x08000068:    08000d2d    -...    DCD    134221101
+        0x0800006c:    08000163    c...    DCD    134218083
+        0x08000070:    08000163    c...    DCD    134218083
+        0x08000074:    08000163    c...    DCD    134218083
+        0x08000078:    08000163    c...    DCD    134218083
+        0x0800007c:    08000163    c...    DCD    134218083
+        0x08000080:    08000163    c...    DCD    134218083
+        0x08000084:    08000163    c...    DCD    134218083
+        0x08000088:    08000163    c...    DCD    134218083
+        0x0800008c:    08000163    c...    DCD    134218083
+        0x08000090:    08000163    c...    DCD    134218083
+        0x08000094:    08000163    c...    DCD    134218083
+        0x08000098:    08000163    c...    DCD    134218083
+        0x0800009c:    08000da9    ....    DCD    134221225
+        0x080000a0:    08000163    c...    DCD    134218083
+        0x080000a4:    08000163    c...    DCD    134218083
+        0x080000a8:    08000163    c...    DCD    134218083
+        0x080000ac:    08000163    c...    DCD    134218083
+        0x080000b0:    08000163    c...    DCD    134218083
+        0x080000b4:    080035cd    .5..    DCD    134231501
+        0x080000b8:    08000163    c...    DCD    134218083
+        0x080000bc:    08000163    c...    DCD    134218083
+        0x080000c0:    08000163    c...    DCD    134218083
+        0x080000c4:    08000163    c...    DCD    134218083
+        0x080000c8:    08000163    c...    DCD    134218083
+        0x080000cc:    08000163    c...    DCD    134218083
+        0x080000d0:    08000163    c...    DCD    134218083
+        0x080000d4:    080038fd    .8..    DCD    134232317
+        0x080000d8:    08000163    c...    DCD    134218083
+        0x080000dc:    08003985    .9..    DCD    134232453
+        0x080000e0:    08000163    c...    DCD    134218083
+        0x080000e4:    08000163    c...    DCD    134218083
+        0x080000e8:    08000163    c...    DCD    134218083
+        0x080000ec:    08000163    c...    DCD    134218083
+        0x080000f0:    08000163    c...    DCD    134218083
+        0x080000f4:    08000163    c...    DCD    134218083
+        0x080000f8:    08000163    c...    DCD    134218083
+        0x080000fc:    08000163    c...    DCD    134218083
+        0x08000100:    08000163    c...    DCD    134218083
+        0x08000104:    08001c71    q...    DCD    134225009
+        0x08000108:    080035fd    .5..    DCD    134231549
+        0x0800010c:    08000163    c...    DCD    134218083
+        0x08000110:    08000163    c...    DCD    134218083
+        0x08000114:    08000163    c...    DCD    134218083
+        0x08000118:    080036bd    .6..    DCD    134231741
+        0x0800011c:    08003755    U7..    DCD    134231893
+        0x08000120:    08000163    c...    DCD    134218083
+        0x08000124:    08000163    c...    DCD    134218083
+        0x08000128:    08000163    c...    DCD    134218083
+        0x0800012c:    08000163    c...    DCD    134218083
+    $t
+    .ARM.Collect$$$$00000000
+    .ARM.Collect$$$$00000001
+    __Vectors_End
+***** WATCHER-NOMIC.TXT
+        0x08000028:    00000000    ....    DCD    0
+        0x0800002c:    08004b21    !K..    DCD    134236961
+        0x08000030:    0800238d    .#..    DCD    134226829
+        0x08000034:    00000000    ....    DCD    0
+        0x08000038:    08002d97    .-..    DCD    134229399
+        0x0800003c:    08004c35    5L..    DCD    134237237
+        0x08000040:    08000297    ....    DCD    134218391
+        0x08000044:    08000297    ....    DCD    134218391
+        0x08000048:    08000297    ....    DCD    134218391
+        0x0800004c:    08000297    ....    DCD    134218391
+        0x08000050:    08000297    ....    DCD    134218391
+        0x08000054:    08000297    ....    DCD    134218391
+        0x08000058:    08002391    .#..    DCD    134226833
+        0x0800005c:    08000297    ....    DCD    134218391
+        0x08000060:    08000297    ....    DCD    134218391
+        0x08000064:    080023c5    .#..    DCD    134226885
+        0x08000068:    080023f9    .#..    DCD    134226937
+        0x0800006c:    08000297    ....    DCD    134218391
+        0x08000070:    08000297    ....    DCD    134218391
+        0x08000074:    08000297    ....    DCD    134218391
+        0x08000078:    08000297    ....    DCD    134218391
+        0x0800007c:    08000297    ....    DCD    134218391
+        0x08000080:    08000297    ....    DCD    134218391
+        0x08000084:    08000297    ....    DCD    134218391
+        0x08000088:    08000297    ....    DCD    134218391
+        0x0800008c:    08000297    ....    DCD    134218391
+        0x08000090:    08000297    ....    DCD    134218391
+        0x08000094:    08000297    ....    DCD    134218391
+        0x08000098:    08000297    ....    DCD    134218391
+        0x0800009c:    08002475    u$..    DCD    134227061
+        0x080000a0:    08000297    ....    DCD    134218391
+        0x080000a4:    08000297    ....    DCD    134218391
+        0x080000a8:    08000297    ....    DCD    134218391
+        0x080000ac:    08000297    ....    DCD    134218391
+        0x080000b0:    08000297    ....    DCD    134218391
+        0x080000b4:    08004c99    .L..    DCD    134237337
+        0x080000b8:    08000297    ....    DCD    134218391
+        0x080000bc:    08000297    ....    DCD    134218391
+        0x080000c0:    08000297    ....    DCD    134218391
+        0x080000c4:    08000297    ....    DCD    134218391
+        0x080000c8:    08000297    ....    DCD    134218391
+        0x080000cc:    08000297    ....    DCD    134218391
+        0x080000d0:    08000297    ....    DCD    134218391
+        0x080000d4:    08004fc9    .O..    DCD    134238153
+        0x080000d8:    08000297    ....    DCD    134218391
+        0x080000dc:    08005051    QP..    DCD    134238289
+        0x080000e0:    08000297    ....    DCD    134218391
+        0x080000e4:    08000297    ....    DCD    134218391
+        0x080000e8:    08000297    ....    DCD    134218391
+        0x080000ec:    08000297    ....    DCD    134218391
+        0x080000f0:    08000297    ....    DCD    134218391
+        0x080000f4:    08000297    ....    DCD    134218391
+        0x080000f8:    08000297    ....    DCD    134218391
+        0x080000fc:    08000297    ....    DCD    134218391
+        0x08000100:    08000297    ....    DCD    134218391
+        0x08000104:    0800333d    =3..    DCD    134230845
+        0x08000108:    08004cc9    .L..    DCD    134237385
+        0x0800010c:    08000297    ....    DCD    134218391
+        0x08000110:    08000297    ....    DCD    134218391
+        0x08000114:    08000297    ....    DCD    134218391
+        0x08000118:    08004d89    .M..    DCD    134237577
+        0x0800011c:    08004e21    !N..    DCD    134237729
+        0x08000120:    08000297    ....    DCD    134218391
+        0x08000124:    08000297    ....    DCD    134218391
+        0x08000128:    08000297    ....    DCD    134218391
+        0x0800012c:    08000297    ....    DCD    134218391
+    $t
+    !!!main
+    __Vectors_End
+*****
+
+重新同步失败。文件差异过大。
+***** watcher-mic.txt
+    __main
+    _main_stk
+        0x08000130:    f8dfd00c    ....    LDR      sp,__lit__00000000 ; [0x8000140] = 0x2000e160
+    .ARM.Collect$$$$00000004
+    _main_scatterload
+        0x08000134:    f000fae2    ....    BL       __scatterload ; 0x80006fc
+    .ARM.Collect$$$$00000008
+    .ARM.Collect$$$$0000000A
+    .ARM.Collect$$$$0000000B
+    __main_after_scatterload
+    _main_clock
+    _main_cpp_init
+    _main_init
+        0x08000138:    4800        .H      LDR      r0,[pc,#0] ; [0x800013c] = 0x8006515
+        0x0800013a:    4700        .G      BX       r0
+    $d
+        0x0800013c:    08006515    .e..    DCD    134243605
+    .ARM.Collect$$$$00002712
+    __lit__00000000
+    .ARM.Collect$$$$0000000D
+    .ARM.Collect$$$$0000000F
+    __rt_final_cpp
+    __rt_final_exit
+        0x08000140:    2000e160    `..     DCD    536928608
+    $t
+    .text
+        0x08000144:    f000fb0d    ....    BL       $Ven$TT$L$$ ; 0x8000762
+    Reset_Handler
+        0x08000148:    4806        .H      LDR      r0,[pc,#24] ; [0x8000164] = 0x800356d
+        0x0800014a:    4780        .G      BLX      r0
+        0x0800014c:    4806        .H      LDR      r0,[pc,#24] ; [0x8000168] = 0x8000131
+        0x0800014e:    4700        .G      BX       r0
+        0x08000150:    e7fe        ..      B        0x8000150 ; Reset_Handler + 8
+        0x08000152:    e7fe        ..      B        0x8000152 ; Reset_Handler + 10
+        0x08000154:    e7fe        ..      B        0x8000154 ; Reset_Handler + 12
+        0x08000156:    e7fe        ..      B        0x8000156 ; Reset_Handler + 14
+        0x08000158:    e7fe        ..      B        0x8000158 ; Reset_Handler + 16
+        0x0800015a:    e7fe        ..      B        0x800015a ; Reset_Handler + 18
+        0x0800015c:    e7fe        ..      B        0x800015c ; Reset_Handler + 20
+        0x0800015e:    e7fe        ..      B        0x800015e ; Reset_Handler + 22
+        0x08000160:    e7fe        ..      B        0x8000160 ; Reset_Handler + 24
+    ADC1_2_IRQHandler
+    ADC3_IRQHandler
+    CAN1_RX1_IRQHandler
+    CAN1_SCE_IRQHandler
+    DMA1_Channel1_IRQHandler
+    DMA1_Channel2_IRQHandler
+    DMA1_Channel3_IRQHandler
+    DMA1_Channel4_IRQHandler
+    DMA1_Channel5_IRQHandler
+    DMA1_Channel6_IRQHandler
+    DMA1_Channel7_IRQHandler
+    DMA2_Channel1_IRQHandler
+    DMA2_Channel2_IRQHandler
+    DMA2_Channel3_IRQHandler
+    DMA2_Channel4_5_IRQHandler
+    EXTI15_10_IRQHandler
+    EXTI1_IRQHandler
+    EXTI2_IRQHandler
+    FLASH_IRQHandler
+    FSMC_IRQHandler
+    I2C1_ER_IRQHandler
+    I2C1_EV_IRQHandler
+    I2C2_ER_IRQHandler
+    I2C2_EV_IRQHandler
+    PVD_IRQHandler
+    RCC_IRQHandler
+    RTCAlarm_IRQHandler
+    RTC_IRQHandler
+    SPI1_IRQHandler
+    SPI2_IRQHandler
+    SPI3_IRQHandler
+    TAMPER_IRQHandler
+    TIM1_BRK_IRQHandler
+    TIM1_CC_IRQHandler
+    TIM1_TRG_COM_IRQHandler
+    TIM1_UP_IRQHandler
+    TIM2_IRQHandler
+    TIM4_IRQHandler
+    TIM8_BRK_IRQHandler
+    TIM8_CC_IRQHandler
+    TIM8_TRG_COM_IRQHandler
+    TIM8_UP_IRQHandler
+    UART4_IRQHandler
+    UART5_IRQHandler
+    USART2_IRQHandler
+    USBWakeUp_IRQHandler
+    USB_HP_CAN1_TX_IRQHandler
+    USB_LP_CAN1_RX0_IRQHandler
+    WWDG_IRQHandler
+        0x08000162:    e7fe        ..      B        ADC1_2_IRQHandler ; 0x8000162
+    $d
+        0x08000164:    0800356d    m5..    DCD    134231405
+        0x08000168:    08000131    1...    DCD    134218033
+    $t
+    .text
+    __aeabi_ldivmod
+        0x0800016c:    e92d41f0    -..A    PUSH     {r4-r8,lr}
+        0x08000170:    2400        .$      MOVS     r4,#0
+        0x08000172:    1b06        ..      SUBS     r6,r0,r4
+***** WATCHER-NOMIC.TXT
+    __main
+        0x08000130:    f000f802    ....    BL       __scatterload ; 0x8000138
+        0x08000134:    f000f890    ....    BL       __rt_entry ; 0x8000258
+    !!!scatter
+    __scatterload
+    __scatterload_rt2
+    __scatterload_rt2_thumb_only
+        0x08000138:    a00a        ..      ADR      r0,{pc}+0x2c ; 0x8000164
+        0x0800013a:    e8900c00    ....    LDM      r0,{r10,r11}
+        0x0800013e:    4482        .D      ADD      r10,r10,r0
+        0x08000140:    4483        .D      ADD      r11,r11,r0
+        0x08000142:    f1aa0701    ....    SUB      r7,r10,#1
+    __scatterload_null
+        0x08000146:    45da        .E      CMP      r10,r11
+        0x08000148:    d101        ..      BNE      0x800014e ; __scatterload_null + 8
+        0x0800014a:    f000f885    ....    BL       __rt_entry ; 0x8000258
+        0x0800014e:    f2af0e09    ....    ADR      lr,{pc}-7 ; 0x8000147
+        0x08000152:    e8ba000f    ....    LDM      r10!,{r0-r3}
+        0x08000156:    f0130f01    ....    TST      r3,#1
+        0x0800015a:    bf18        ..      IT       NE
+        0x0800015c:    1afb        ..      SUBNE    r3,r7,r3
+        0x0800015e:    f0430301    C...    ORR      r3,r3,#1
+        0x08000162:    4718        .G      BX       r3
+    $d
+        0x08000164:    00008784    ....    DCD    34692
+        0x08000168:    000087a4    ....    DCD    34724
+    $t
+    !!handler_copy
+    __scatterload_copy
+        0x0800016c:    3a10        .:      SUBS     r2,r2,#0x10
+        0x0800016e:    bf24        $.      ITT      CS
+        0x08000170:    c878        x.      LDMCS    r0!,{r3-r6}
+        0x08000172:    c178        x.      STMCS    r1!,{r3-r6}
+        0x08000174:    d8fa        ..      BHI      __scatterload_copy ; 0x800016c
+        0x08000176:    0752        R.      LSLS     r2,r2,#29
+        0x08000178:    bf24        $.      ITT      CS
+        0x0800017a:    c830        0.      LDMCS    r0!,{r4,r5}
+        0x0800017c:    c130        0.      STMCS    r1!,{r4,r5}
+        0x0800017e:    bf44        D.      ITT      MI
+        0x08000180:    6804        .h      LDRMI    r4,[r0,#0]
+        0x08000182:    600c        .`      STRMI    r4,[r1,#0]
+        0x08000184:    4770        pG      BX       lr
+        0x08000186:    0000        ..      MOVS     r0,r0
+    !!handler_zi
+    __scatterload_zeroinit
+        0x08000188:    2300        .#      MOVS     r3,#0
+        0x0800018a:    2400        .$      MOVS     r4,#0
+        0x0800018c:    2500        .%      MOVS     r5,#0
+        0x0800018e:    2600        .&      MOVS     r6,#0
+        0x08000190:    3a10        .:      SUBS     r2,r2,#0x10
+        0x08000192:    bf28        (.      IT       CS
+        0x08000194:    c178        x.      STMCS    r1!,{r3-r6}
+        0x08000196:    d8fb        ..      BHI      0x8000190 ; __scatterload_zeroinit + 8
+        0x08000198:    0752        R.      LSLS     r2,r2,#29
+        0x0800019a:    bf28        (.      IT       CS
+        0x0800019c:    c130        0.      STMCS    r1!,{r4,r5}
+        0x0800019e:    bf48        H.      IT       MI
+        0x080001a0:    600b        .`      STRMI    r3,[r1,#0]
+        0x080001a2:    4770        pG      BX       lr
+    .ARM.Collect$$_printf_percent$$00000000
+    .ARM.Collect$$_printf_percent$$00000001
+    _printf_n
+    _printf_percent
+        0x080001a4:    296e        n)      CMP      r1,#0x6e
+        0x080001a6:    f000841a    ....    BEQ.W    _printf_charcount ; 0x80009de
+    .ARM.Collect$$_printf_percent$$00000002
+    _printf_p
+        0x080001aa:    2970        p)      CMP      r1,#0x70
+        0x080001ac:    f0008185    ....    BEQ.W    _printf_hex_ptr ; 0x80004ba
+    .ARM.Collect$$_printf_percent$$00000003
+    _printf_f
+        0x080001b0:    2966        f)      CMP      r1,#0x66
+        0x080001b2:    f008806f    ..o.    BEQ.W    _printf_fp_dec ; 0x8008294
+    .ARM.Collect$$_printf_percent$$00000004
+    _printf_e
+        0x080001b6:    2965        e)      CMP      r1,#0x65
+        0x080001b8:    f008806c    ..l.    BEQ.W    _printf_fp_dec ; 0x8008294
+    .ARM.Collect$$_printf_percent$$00000005
+    _printf_g
+        0x080001bc:    2967        g)      CMP      r1,#0x67
+        0x080001be:    f0088069    ..i.    BEQ.W    _printf_fp_dec ; 0x8008294
+    .ARM.Collect$$_printf_percent$$00000006
+    _printf_a
+        0x080001c2:    2961        a)      CMP      r1,#0x61
+        0x080001c4:    f0088068    ..h.    BEQ.W    _printf_fp_hex ; 0x8008298
+    .ARM.Collect$$_printf_percent$$00000007
+    _printf_ll
+        0x080001c8:    6803        .h      LDR      r3,[r0,#0]
+        0x080001ca:    0a1b        ..      LSRS     r3,r3,#8
+        0x080001cc:    bf28        (.      IT       CS
+        0x080001ce:    f0410180    A...    ORRCS    r1,r1,#0x80
+    .ARM.Collect$$_printf_percent$$00000008
+    _printf_i
+        0x080001d2:    2969        i)      CMP      r1,#0x69
+        0x080001d4:    f00080f6    ....    BEQ.W    _printf_int_dec ; 0x80003c4
+    .ARM.Collect$$_printf_percent$$00000009
+    _printf_d
+        0x080001d8:    2964        d)      CMP      r1,#0x64
+        0x080001da:    f00080f3    ....    BEQ.W    _printf_int_dec ; 0x80003c4
+    .ARM.Collect$$_printf_percent$$0000000A
+*****
+

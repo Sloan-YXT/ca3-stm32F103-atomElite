@@ -1,0 +1,98 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.29.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Yao XueTao, UESTC, LIC=UB4EI-TSTAP-VJ26J-UYIAM-DBAKA-HBED3
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.29.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.29.0.0
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.36.0
+Dialog DLL:      TARMSTM.DLL V1.66.0.0
+ 
+<h2>Project:</h2>
+C:\Users\64953\Desktop\毕业设计\watcher-stm32\USER\watcher-stm32.uvprojx
+Project File Date:  09/04/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling common.c...
+..\ATK-ESP8266\common.c(124): warning:  #186-D: pointless comparison of unsigned integer with zero
+  		else if(waittime<0)
+..\ATK-ESP8266\common.c(209): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		sprintf(s,"AT+CIPSEND=%d,%d\r\n",link,sendlen);
+..\ATK-ESP8266\common.c(301): warning:  #186-D: pointless comparison of unsigned integer with zero
+  		else if(waittime<0)
+..\ATK-ESP8266\common.c(432): warning:  #186-D: pointless comparison of unsigned integer with zero
+  		else if(waittime<0)
+..\ATK-ESP8266\common.c: 4 warnings, 0 errors
+compiling main.c...
+wire.h(2): warning:  #1295-D: Deprecated declaration light_sensor_init - give arg types
+  void light_sensor_init();
+wire.h(3): warning:  #1295-D: Deprecated declaration smoke_sensor_init - give arg types
+  void smoke_sensor_init();
+wire.h(5): warning:  #1-D: last line of file ends without a newline
+  u8 get_smoke(void);
+main.c(82): warning:  #68-D: integer conversion resulted in a change of sign
+  			atk_8266_send_data_neat_large(link,(u8*)databuf,bi4width,(u8 *)"OK",-1);//收不到回复就不继续
+main.c(37): warning:  #177-D: variable "f_bmp_new"  was declared but never referenced
+  	FIL *f_bmp,*f_bmp_new;
+main.c(40): warning:  #177-D: variable "bmpheadsize"  was declared but never referenced
+  	u16 bmpheadsize=sizeof(BITMAPINFO);
+main.c(42): warning:  #177-D: variable "fpos"  was declared but never referenced
+  	u32 fpos;
+main.c(43): warning:  #177-D: variable "filename"  was declared but never referenced
+  	char filename[30];
+main.c(176): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  	len = strlen(name);
+main.c(180): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  	len = strlen(type);
+main.c(187): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  	len = strlen(position);
+main.c(199): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		sprintf(temp,"%d.%d",HIGH(temp_in),LOW(temp_in));
+main.c(200): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		sprintf(humi,"%d.%d",HIGH(humi_in),LOW(humi_in));
+main.c(201): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		sprintf(light,"%d",light_in);
+main.c(202): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		sprintf(smoke,"%d",smoke_in);
+main.c(228): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  		len = strlen(tick);
+main.c(229): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		sprintf(message_box,"AT+CIPSEND=2,%d",len);
+main.c: 17 warnings, 0 errors
+linking...
+Program Size: Code=33132 RO-data=2248 RW-data=232 ZI-data=1102552  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin --output=ATK_ESP8266.bin ..\OBJ\ATK_ESP8266.axf
+After Build - User command #2: fromelf --text -a -c --output=ATK_ESP8266.txt ..\OBJ\ATK_ESP8266.axf
+"..\OBJ\ATK_ESP8266.axf" - 0 Error(s), 21 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  D:\Users\86132\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¶ÃVision V5.29.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Yao XueTao, UESTC, LIC=UB4EI-TSTAP-VJ26J-UYIAM-DBAKA-HBED3
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.29.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.29.0.0
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TARMSTM.DLL V1.66.0.0
+ 
+<h2>Project:</h2>
+C:\Users\64953\Desktop\±œ“µ…Ëº∆\watcher-stm32-esp\USER\watcher-stm32-esp.uvprojx
+Project File Date:  04/09/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+wire.h(5): warning:  #1-D: last line of file ends without a newline
+  u8 get_smoke(void);
+main.c(64): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  	len = strlen(name);
+main.c(69): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  	len = strlen(type);
+main.c(75): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  	len = strlen(position);
+main.c(86): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		sprintf(temp,"%d.%d",HIGH(temp_in),LOW(temp_in));
+main.c(87): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		sprintf(humi,"%d.%d",HIGH(humi_in),LOW(humi_in));
+main.c(88): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		sprintf(light,"%d",light_in);
+main.c(89): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		sprintf(smoke,"%d",smoke_in);
+main.c(33): warning:  #177-D: variable "res"  was declared but never referenced
+  	u8 res;
+main.c(38): warning:  #177-D: variable "message_box"  was declared but never referenced
+  	u8 message_box[100];
+main.c: 10 warnings, 0 errors
+linking...
+Program Size: Code=14180 RO-data=892 RW-data=88 ZI-data=14544  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin --output=watcer.bin ..\OBJ\watcher.axf
+After Build - User command #2: fromelf --text -a -c --output=watcher.txt ..\OBJ\watcher.axf
+"..\OBJ\watcher.axf" - 0 Error(s), 10 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  D:\Users\86132\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>

@@ -1,0 +1,2 @@
+keil图形界面写配置文件的过程必然存在bug，jlink开始时没有，debug选项点了SW自动测速，后面插上Jlink再要verify就通不过了，
+设置正常，认为是bug，不verify即可（并且其他设置完全相同项目完全没问题）
